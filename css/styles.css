@@ -167,3 +167,16 @@ main{
     opacity:.9;
 }
 
+@media(max-width:768px){
+
+    #whatsapp{
+        position: fixed;
+        bottom: 90px; /* ajusta según tu barra inferior */
+        left: 15px;
+        right: 15px;
+        width: auto;
+        z-index: 1001;
+        margin-top: 0;
+    }
+
+}
