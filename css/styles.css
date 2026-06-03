@@ -170,7 +170,8 @@ main{
 @media(max-width:768px){
 
     main{
-        padding-bottom: 30px;
+        display: block;
+        padding-bottom: 200px; /* espacio real para la barra */
     }
 
     .resumen{
@@ -178,14 +179,17 @@ main{
         bottom: 0;
         left: 0;
         width: 100%;
+        height: auto;
+        max-height: 180px; /* 👈 evita que crezca infinito */
+        overflow-y: auto;  /* 👈 si hay mucho contenido, scroll interno */
         border-radius: 20px 20px 0 0;
         z-index: 1000;
+        background: white;
     }
 
     #whatsapp{
-        position: static;   /* 👈 CLAVE: lo saca del fixed */
+        position: relative;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 10px;
     }
-
 }
