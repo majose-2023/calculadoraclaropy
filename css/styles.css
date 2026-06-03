@@ -170,24 +170,26 @@ main{
 @media(max-width:768px){
 
     main{
-        display: block;
-        padding-bottom: 200px; /* espacio real para la barra */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planes{
+        order: 1;
     }
 
     .resumen{
-        position: fixed;
-        bottom: 0;
-        left: 0;
+        order: 2; /* 👈 lo manda abajo */
+        position: relative;
         width: 100%;
-        background: white;
+        margin-top: 20px;
 
-        border-radius: 20px 20px 0 0;
-        z-index: 1000;
+        border-radius: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,.08);
     }
 
     #whatsapp{
-        position: relative;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 }
