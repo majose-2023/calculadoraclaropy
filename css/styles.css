@@ -179,12 +179,10 @@ main{
         bottom: 0;
         left: 0;
         width: 100%;
-        height: auto;
-        max-height: 180px; /* 👈 evita que crezca infinito */
-        overflow-y: auto;  /* 👈 si hay mucho contenido, scroll interno */
+        background: white;
+
         border-radius: 20px 20px 0 0;
         z-index: 1000;
-        background: white;
     }
 
     #whatsapp{
