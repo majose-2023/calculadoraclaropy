@@ -193,6 +193,10 @@ main{
 
 @media(max-width:768px){
 
+
+     .whatsapp{
+        bottom: 140px; /* lo subes arriba de la barra resumen */
+    }
     header h1{
         font-size:1.4rem;
     }
